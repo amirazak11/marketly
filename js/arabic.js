@@ -58,14 +58,14 @@ if(windowScroll > homeOffest )
     link2: "#",
     } ,  { icon: "Icon (3).png", 
     label: " Media production  ",
-    label2:"", 
+    label2:"الإنتاج الإعلامي", 
     text: "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة",
     text2: "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة",
     link: "#",
     link2: "#",
     } ,  { icon: "Icon (3).png", 
     label: " Printing  ",
-    label2:"", 
+    label2:"طباعة", 
     text: "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة",
     text2: "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة",
     link: "#",
@@ -85,23 +85,23 @@ if(windowScroll > homeOffest )
       <div class="col-lg-4  col-sm-12 p-2">
       <div class="card ">
   <div class="w-100 ">
-  <h3>${cards[i].label}</h3>
-  <p>${cards[i].text}</p>
-  <button class="btn more">see more</button>
+  <h3>${cards[i].label2}</h3>
+  <p>${cards[i].text2}</p>
+  <button class="btn more"> المزيد...</button>
   </div>
   </div>
   </div>
       ` }
-let engcardsContainer = document.getElementById("engcards-container");
-engcardsContainer.innerHTML =cartona;
+let arbcardsContainer = document.getElementById("arbcards-container");
+arbcardsContainer.innerHTML =cartona;
+
 let ulServices=document.getElementById("ul-services");
 
 let sercartona = ``;
 for (let i = 0; i < cards.length; i++) {
   sercartona += `  
-  <li>${cards[i].label}</li>
+  <li>${cards[i].label2}</li>
 
 `}
+
 ulServices.innerHTML=sercartona;
-
-

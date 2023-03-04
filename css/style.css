@@ -30,7 +30,18 @@
     justify-content: center;
     align-items: center;
 }
-
+.nav-link{
+    color: white ;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.nav-link:active{
+    color: white !important;
+}
+.dropdown-item {
+    color: white !important;
+}
 .header-content img{
     height: 0;
 }
@@ -44,53 +55,66 @@ body{
     color: var(--white-color);
     text-decoration: none;
 }
-#profile{
-    background-color: #d8d8d8;
-}
+
 .nav-item  {
     font-size: 16px;
     font-weight: 600;
     white-space: nowrap;
     transition: 0.3s;
     letter-spacing: 0.4px;
+    padding: 15px;
     text-transform: uppercase;
     position: relative;
 }
-
-
-
-
-
-
+.nav-item .nav-linkk {
+color: white;
+font-size: 16px;
+font-weight: 600;
+white-space: nowrap;
+transition: 0.3s;
+padding: 10px;
+letter-spacing: 0.4px;
+text-decoration: none;
+}
+.res-div .dropdown-item {
+    color: rgb(3, 3, 3) !important;
+}
 .header-content{
     text-align: center;
   font-size: 2rem;
-  padding: 20px;
-
+  padding: 80px;
 }
 .fixed-nav{
     position: fixed;
+    display: flex;
     z-index: 11111;
 }
 .header-content p{
-    padding: 50px;
     color: #c7c7c7;
 }
-#t p{
+.p-ele{
+    display: flex;
+    color: #ff3600;
 
-        font-size: 33px;
-padding: 0px;
-    color: #345d43;
+}
+
+.arabic .p-ele{
     direction: ltr !important;
-    font-weight: bold;
+}
+.element{
+
+font-weight: 100 !important;
+    color: #ff3600;
+    font-size: 38px;
+    direction: ltr !important;
     text-transform: uppercase;
-font-family: GLACIAL INDIFFERENCE;
+font-family:  'Poppins', sans-serif;
 }
 .animatited-container{
     width: 100%;
 }
 .btn-green{
-    background-color:#345d43; 
+    background-color:#ff3600; 
     
     color: rgb(168, 168, 168);
 
@@ -102,7 +126,7 @@ font-family: GLACIAL INDIFFERENCE;
     right: 0;
     display: flex;
     flex-direction: column;
-    color:#345d43 ;
+    color:#ff3600 ;
     padding: 2px;
 
 }
@@ -120,31 +144,29 @@ font-family: GLACIAL INDIFFERENCE;
     left: 0;
     display: flex;
     flex-direction: column;
-    color:#345d43 ;
+    color:#ff3600 ;
     padding: 2px;
 
 }
 .conacts-english .fa-brands{
    padding: 11px;
-   color:#345d43 ;
+   color:#ff3600 ;
     background-color: #474747a8;
     border-radius: 30px;
     font-size: 20px;
     margin-bottom: 20px;
 }
-
-
-
-
 .card{
 
-    background-color: rgb(71, 71, 71);
-    color: rgb(168, 168, 168);
+    background-color:#6462627c;
 }
-
+.card div {
+    color: #000;
+    padding: 30px;
+}
 .footer ul li{
     list-style: none;
-    color: #345d43;
+    color: #ff3600;
 }
 .footer a{
     color: #c7c7c7;
@@ -163,23 +185,23 @@ flex-direction: column;
 
 .services{
     padding-top: 100px;
+background-color: #241c1ade;
     padding-bottom: 100px;
-    background-color: #ffffff;
 }
 
-.footer h3:hover::after {
+.footer h5:hover::after {
  
     width: 100px;
 
 }
-.footer h3::after{
+.footer h5::after{
     content: '';
     width: 50px;
     bottom: 0px;
     height: 2px;
      top:31px ;
     text-align: center;
-    background: #345d43;
+    background: #ff3600;
     position: absolute;
     right: 5px;
     transition: width 1s;
@@ -197,7 +219,7 @@ display: flex;
 flex-direction: column;
 }
 .contact-us div i {
-color: #345d43;
+color: #ff3600;
     }
 .contact-us i{
     font-size: 15px;
@@ -205,7 +227,7 @@ color: #345d43;
 }
 .dropdownn i{
     font-size: 30px;
-    color: #345d43;
+    color: #ff3600;
     
 }
 .dropdownn{
@@ -246,7 +268,7 @@ justify-content: center;
             height: 2px;
              top:31px ;
             text-align: center;
-            background: #345d43;
+            background: #ff3600;
             position: absolute;
             left: 5px;
             transition: width 1s;
@@ -257,10 +279,18 @@ list-style: none;        }
 .second-footer div ul li {
 width: 100%;
 }
-
+.second-footer div h5{
+    color: white;
+}
+footer {
+    color: white;
+}
         .contactus {
             display: flex;
             flex-direction: column;
+        }
+        .text-gray{
+            color: gray !important;
         }
         @keyframes animate {
             from{
@@ -279,24 +309,143 @@ width: 100%;
 
         }
         #t-block{display: none;}
-    
-@media screen and (max-width: 600px) {
+        .second-footer div i{
+            color: #ff3600;
+            }
 
+            .contactus span i{
+                color: #ff3600;
+
+            }
+            #profile{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            #profile .row{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                
+            }
+            #profile .row button ,.more{
+            background-color: orangered;
+            width: 100px;
+                
+            }
+            #profile .row h3{
+            color: white;
+            }
+            #profile .row h3 i{
+                color: #ff3600;
+                }
+            #profile .row div img{
+            border-radius:71px;
+            
+            }
+            
+            #profile .row .d-flex{
+                flex-direction: column;
+                justify-content: center;
+                 }
+
+                 .nav-link {color: white;}
+
+
+                 .res-div{
+                    display: none;
+                  }
+                  .not-hover-dark:hover{
+                    background-color: #212529 !important;
+                              }
+                  .not-hover-dark:active{
+        background-color: #212529 !important;
+                  }
+
+                  .p-padding {
+
+                    padding: 0 40px;
+                }
+                  .p-padding p{
+font-size: 20px;    
+font-weight: 500;              }
+form{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+form .container{
+    background-color: #aaa8a898;
+    border-radius: 20px !important;
+    padding: 30px;
+    color: #111111;
+}
+.btn-bg-orange-submit{
+    width: 20%;
+    background-color: #ff3600;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+textarea {
+    resize: none;
+}
+
+form .input-data{
+padding: 4px;
+}
+
+
+.contactus span a{
+    text-decoration: none;
+    color: #c7c7c7;
+}
+@media screen and (max-width: 600px) {
     #nav-bar{
         display: none;
     }
+    .res-div{
+        padding: 20px;
+    
+    }
+    .dropdown-menu .nav-item a{
+        padding: 10px;
+        font-weight: 400;
+    }
+    .dropdown-menu .nav-item a:hover{
+        color: #c7c7c7;
+    font-weight: 600;
+    }
+    .res-div{    
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        z-index: 111111111111111111111111111111111111 !important; }
+    .dropdown-toggle::after {
+        display: none !important;}
 
+    .res-div .dropdown button i{
+color: #ff3600;
+font-size: 30px;
+    }
+    .res-div .dropdown button {
+border: none;
+            }
     .dropdownn {
         width: 100%;
         position: relative;
         display: flex;
       }
-      
+   
+      .not-hover:active{
+        
+        background-color: white !important;
+      }
       .dropdown-content {
         display: none;
         position: absolute;
         top: 30px;
-        background-color: #345d434d;
+        background-color: #ff6200;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         padding: 12px 16px;
@@ -310,12 +459,10 @@ width: 100%;
       #home {
         height: 70vh;
     }
-    .conacts{
-        top: 20%;
-       
-    
+    .conacts {
+        top: 38%;
     }
-    #t{
+    .p-ele{
         display: none !important;
     }
 
@@ -329,7 +476,7 @@ margin-top: 20px;
 
         font-size: 33px;
 padding: 0px;
-    color: #345d43;
+    color: #ff3600;
     direction: ltr !important;
     font-weight: bold;
     text-transform: uppercase;
@@ -341,8 +488,10 @@ font-family: GLACIAL INDIFFERENCE;
     margin-bottom: 30px;
 
 }
-
-
+#profile .row div img{
+    border-radius:21px;
+    
+    }
 .second-footer{
     flex-direction: column;
     font-size: 15px;
@@ -350,9 +499,7 @@ font-family: GLACIAL INDIFFERENCE;
 .second-footer div{
 padding: 0px;
 }
-.second-footer div i{
-    color: #345d43;
-    }
+
 .footerlink{
     display: flex;
 }
