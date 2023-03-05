@@ -84,7 +84,7 @@ if(windowScroll > homeOffest )
   let cartona = ``;
   for (let i = 0; i < cards.length; i++) {
     cartona += `   
-      <div class="col-lg-4  col-sm-12 p-2">
+      <div class="col-lg-3  col-sm-12 p-2">
       <div class="card ">
   <div class="w-100 ">
   <h3>${cards[i].label2}</h3>
