@@ -1,3 +1,6 @@
+const nameInput = document.querySelector(".name-input");
+const emailInput = document.querySelector(".email-input");
+const phoneInput = document.querySelector(".phone-input");
 const messageInput = document.querySelector(".message-input")
 const sendBtn = document.querySelector(".send-btn")
 const sendMessageToEmail = () => {
@@ -7,7 +10,8 @@ const sendMessageToEmail = () => {
         phone: phoneInput.value,
         message: messageInput.value
     }
-    fetch('https://formsubmit.co/ajax/drmedia34@gmail.com', {
+
+    fetch('https://formsubmit.co/ajax/amirazak1032000@gmail.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
