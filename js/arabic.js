@@ -10,14 +10,16 @@ if(windowScroll > homeOffest )
 }
   }); 
   $(".header-content img").animate(
-    {height: "200px",width: "284px;"},1500,function(){
-    $( document ).ready(function() {
-      var typed = new Typed('.element', {
-        strings: ['First ^1000 sentence.', 'marketly....to shift'],
-        typeSpeed: 100
-  
+    {height: "300px",width: "300px;"},1500,function(){
+      $("#slogn").fadeIn(1000, function () {
+        $( document ).ready(function() {
+          var typed = new Typed('.element', {
+            strings: ['First ^1000 sentence.', 'We Serve To Shift !'],
+            typeSpeed: 100
+      
+          });
       });
-  });
+      })
   });
 
    let cards = [
@@ -86,8 +88,7 @@ if(windowScroll > homeOffest )
       <div class="card ">
   <div class="w-100 ">
   <h3>${cards[i].label2}</h3>
-  <p>${cards[i].text2}</p>
-  <button class="btn more"> المزيد...</button>
+  <button class="btn more"  onclick="window.location.href='feedback.html';"> سجل الان</button>
   </div>
   </div>
   </div>

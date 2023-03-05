@@ -9,15 +9,20 @@ if(windowScroll > homeOffest )
 
 }
   }); 
+
+
+
   $(".header-content img").animate(
-    {height: "200px",width: "284px;"},1500,function(){
-    $( document ).ready(function() {
-      var typed = new Typed('.element', {
-        strings: ['First ^1000 sentence.', 'marketly....to shift'],
-        typeSpeed: 100
-  
+    {height: "250px",width: "250px;"},1500,function(){
+      $("#slogn").fadeIn(1000, function () {
+        $( document ).ready(function() {
+          var typed = new Typed('.element', {
+            strings: ['First ^1000 sentence.', 'We Serve To Shift !'],
+            typeSpeed: 100
+      
+          });
       });
-  });
+      })
   });
 
    let cards = [
@@ -82,12 +87,12 @@ if(windowScroll > homeOffest )
   let cartona = ``;
   for (let i = 0; i < cards.length; i++) {
     cartona += `   
-      <div class="col-lg-4  col-sm-12 p-2">
+      <div class="col-lg-3  col-sm-6 p-2">
       <div class="card ">
   <div class="w-100 ">
   <h3>${cards[i].label}</h3>
-  <p>${cards[i].text}</p>
-  <button class="btn more">see more</button>
+  
+  <button class="btn more" onclick="window.location.href='feedback.html';">Order Now</button>
   </div>
   </div>
   </div>

@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
 }
+#services{
+    background-image: url('../img/bg2.jfif');
+    background-position: center center;
+    background-size: contain;
+}
 .arabic{
     width: 100%;
     height: 100%;
@@ -94,22 +99,30 @@ text-decoration: none;
 }
 .p-ele{
     display: flex;
-    color: #ff3600;
-
-}
-
-.arabic .p-ele{
-    direction: ltr !important;
 }
 .element{
 
-font-weight: 100 !important;
-    color: #ff3600;
-    font-size: 38px;
+    font-weight: 100 !important;
+        color: #ff3600;
+        font-size: 38px;
+        letter-spacing: 5pt;
+        direction: ltr !important;
+    font-family:  'Poppins', sans-serif;
+    }
+    #slogn{
+        font-weight: 100 !important;
+        font-size: 40pt;
+        direction: ltr !important;
+        text-transform: uppercase;
+    font-family:  'Poppins', sans-serif;
+        display: none;
+        color: #ffffff;
+        letter-spacing: 10pt;
+    }
+.arabic .p-ele{
     direction: ltr !important;
-    text-transform: uppercase;
-font-family:  'Poppins', sans-serif;
 }
+
 .animatited-container{
     width: 100%;
 }
@@ -158,11 +171,20 @@ font-family:  'Poppins', sans-serif;
 }
 .card{
 
-    background-color:#6462627c;
+    background-color:#000000a6;
+    padding: 20px;
+
 }
-.card div {
-    color: #000;
-    padding: 30px;
+.card div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card div h3{
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 10px;
 }
 .footer ul li{
     list-style: none;
@@ -326,11 +348,15 @@ footer {
                 padding-bottom: 20px;
                 
             }
-            #profile .row button ,.more{
-            background-color: orangered;
+            #profile .row button {
+            background-color:  #ff3600;;
             width: 100px;
                 
             }
+            .more{
+                background-color:  #ff3600;
+color: aliceblue;
+                }
             #profile .row h3{
             color: white;
             }
@@ -380,6 +406,7 @@ form .container{
     padding: 30px;
     color: #111111;
 }
+
 .btn-bg-orange-submit{
     width: 30%;
     background-color: #ff3600;
@@ -404,13 +431,25 @@ padding: 4px;
     width: 80%;
     
 }
+.typed-cursor.typed-cursor--blink{
+    color: #ff3600;
+}
 @media screen and (max-width: 375px) {
     .p-padding {
         padding: 0 0px;
     }
 }
 @media screen and (max-width: 600px) {
+    .element{
 
+            font-size: 25px;
+            letter-spacing: 3pt;
+
+        }
+        #slogn{
+            font-size: 20pt;
+            letter-spacing: 5pt;
+        }
 .arabic ,.english{
     padding: 10px;
 }    #nav-bar{
@@ -474,26 +513,7 @@ border: none;
     .conacts {
         top: 38%;
     }
-    .p-ele{
-        display: none !important;
-    }
 
-    #t-block {
-        display: flex !important;
-margin-top: 20px;
-
-    }
-
-    #t-block p{
-
-        font-size: 33px;
-padding: 0px;
-    color: #ff3600;
-    direction: ltr !important;
-    font-weight: bold;
-    text-transform: uppercase;
-font-family: GLACIAL INDIFFERENCE;
-}
 .card{
     width: 80%;
     margin: auto;
