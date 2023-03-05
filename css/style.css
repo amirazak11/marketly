@@ -82,7 +82,7 @@ text-decoration: none;
 .header-content{
     text-align: center;
   font-size: 2rem;
-  padding: 80px;
+  padding-top: 40px;
 }
 .fixed-nav{
     position: fixed;
@@ -400,8 +400,15 @@ padding: 4px;
     text-decoration: none;
     color: #c7c7c7;
 }
+@media screen and (max-width: 375px) {
+    .p-padding {
+        padding: 0 0px;
+    }
+}
 @media screen and (max-width: 600px) {
-    #nav-bar{
+.arabic ,.english{
+    padding: 10px;
+}    #nav-bar{
         display: none;
     }
     .res-div{
@@ -457,7 +464,7 @@ border: none;
         flex-direction: column;
       }
       #home {
-        height: 70vh;
+        height: 80vh;
     }
     .conacts {
         top: 38%;
@@ -503,5 +510,7 @@ padding: 0px;
 .footerlink{
     display: flex;
 }
-
+.p-padding {
+    padding: 0 0px;
+}
 }
