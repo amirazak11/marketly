@@ -406,7 +406,8 @@ color: aliceblue;
                     padding: 0 40px;
                 }
                   .p-padding p{
-font-size: 20px;    
+                    color: rgb(183, 183, 183);
+font-size: 15px;    
 font-weight: 500;            
   }
 form{
