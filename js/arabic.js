@@ -10,7 +10,7 @@ if(windowScroll > homeOffest )
 }
   }); 
   $(".header-content img").animate(
-    {height: "300px",width: "300px;"},1500,function(){
+    {height: "250px",width: "250px;"},1500,function(){
       $("#slogn").fadeIn(1000, function () {
         $( document ).ready(function() {
           var typed = new Typed('.element', {

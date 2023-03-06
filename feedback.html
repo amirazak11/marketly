@@ -12,7 +12,7 @@
     <title>feedback</title>
 </head>
 <body>
-  <form >
+  <form onsubmit="return false" >
     <div class="container w-75">
       <div class="row  m-auto py-3 d-flex justify-content-center">
         <div class="input-data ">
@@ -36,13 +36,27 @@
           <textarea class="form-control message-input"  rows="7"></textarea>
         </div>
 
-        <button class=" btn-bg-orange-submit mt-1 send-btn" > Submit</button>
+        <button class=" btn-bg-orange-submit mt-1 send-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  > Submit</button>
 
       </div>
     </div>
   </form>
+  <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+        </div>
+        <div class="modal-body" >
 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary m-auto" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="form.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>

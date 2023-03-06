@@ -65,6 +65,9 @@ body{
 #home {
     height: 100vh;
 }
+#home div{
+    height: 90%;
+}
 #home a{
     color: var(--white-color);
     text-decoration: none;
@@ -404,7 +407,8 @@ color: aliceblue;
                 }
                   .p-padding p{
 font-size: 20px;    
-font-weight: 500;              }
+font-weight: 500;            
+  }
 form{
     display: flex;
     justify-content: center;
@@ -560,7 +564,7 @@ padding: 0px;
     font-size: 10px;
 }
 .first-footer P{
-    height: 130PX;
+    height: 55PX;
     font-size: 12px;
     display: flex;
     align-items: center;
