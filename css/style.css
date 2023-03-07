@@ -247,11 +247,12 @@ background-color: #241c1ade;
     width: 50px;
     bottom: 0px;
     height: 2px;
-     top:31px ;
+     top:27px ;
     text-align: center;
     background: #ff3600;
     position: absolute;
     right: 5px;
+    margin-bottom: 10px;
     transition: width 1s;
 
 }
@@ -578,6 +579,9 @@ padding: 0px;
     display: flex;
     align-items: center;
 }
+.first-footer div img {
+    padding: 20px 10px 0px 10px;
+}
 .btn-bg-orange-submit {
     width: 47%;
     padding: 6px;
@@ -585,5 +589,8 @@ padding: 0px;
 }
 .input-data{
  width: 90%;
+    }
+    footer{
+        padding-top: 20px;
     }
 }

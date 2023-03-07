@@ -7,11 +7,11 @@ const sendBtn = document.querySelector(".send-btn");
 let modalBody = document.querySelector(".modal-body");
 const sendMessageToEmail = () => {
   if(
-    nameInput.value.trim().length === 0 ||
+     nameInput.value.trim().length === 0 ||
     emailInput.value.trim().length === 0 ||
     phoneInput.value.trim().length === 0 ||
     messageInput.value.trim().length === 0 ||
-    topicInput.value.trim().length === 0
+    topicInput.value.trim().length === 0 
   ) {
    modalBody.innerHTML= `
    <p>You must enter your complete information</p>
@@ -48,4 +48,3 @@ else{
   })
 }
 sendBtn.addEventListener("click", sendMessageToEmail)
-
